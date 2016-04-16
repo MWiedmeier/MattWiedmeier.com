@@ -1,0 +1,111 @@
+body{
+    font-family: verdana;
+    padding: 0;
+    margin: 0;
+}
+
+#first-bg {
+    height: 30em;
+   background-image: url("/mountainlake.jpg");
+    background-color: rgb(24,29,39);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+h1 {
+    color: white;
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+    margin: 0;
+    padding-top: 5em;
+}
+
+h2 {
+    margin: 0;
+    text-align: center;
+}
+
+#second-div {
+    height: auto;
+    background-color: rgb(230,240,220);
+}
+
+#second-div p {
+    padding: 1em;
+    font-size: auto;
+    text-align: justify;
+}
+
+#second-bg {
+    height: 30em;
+/*  background-image: url("/sunsetmountain.jpg");*/
+    background-color: rgb(24,29,39);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+#third-bg {
+    height: 50em;
+/*  background-image: url("/cityscene.jpg");*/
+    background-color: rgb(24,29,39);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+.topnav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    color: white;
+}
+
+.topnav li {
+    float: left;
+}
+
+.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+.topnav li a:hover {
+    background-color: rgba(255,255,255,.2);
+}
+
+.topnav ul li.icon { display: none;}
+
+/* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
+@media screen and (max-width:680px) {
+  .topnav ul li:not(:first-child) {display: none;}
+  .topnav ul li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
+@media screen and (max-width:680px) {
+  .topnav.responsive ul {position: fixed;}
+  .topnav.responsive ul li.icon{
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive ul li {
+    float: none;
+    display: inline;
+  }
+  .topnav.responsive ul li a {
+    display: block;
+    text-align: left;
+  }
+}
