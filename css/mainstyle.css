@@ -7,7 +7,7 @@ body{
 
 #first-bg {
     height: 30em;
-    background-image: url("/mountainlake.jpg");
+    /*background-image: url("/mountainlake.jpg");*/
     background-color: rgb(24,29,39);
     background-size: 100% 100%;
     background-attachment: fixed;
@@ -50,14 +50,14 @@ p {
 }
 
 #second-bg {
-    height: 20em;
+    height: 10em;
     background-color: rgb(24,29,39);
     background-size: 100% 100%;
     background-attachment: fixed;
 }
 
 #third-bg {
-    height: 20em;
+    height: 10em;
     background-color: rgb(24,29,39);
     background-size: 100% 100%;
     background-attachment: fixed;
@@ -86,6 +86,10 @@ p {
     text-decoration: none;
 }
 
+.topnav ul {
+    background-color: black
+}
+
 /* Change the link color to #111 (black) on hover */
 .topnav li a:hover {
     background-color: rgba(255,255,255,.2);
@@ -100,6 +104,7 @@ p {
         float:right;
         display: inline-block;
     }
+    
 }
 
 @media screen and (max-width:680px) {
